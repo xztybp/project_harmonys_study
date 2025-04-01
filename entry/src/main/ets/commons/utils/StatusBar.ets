@@ -14,12 +14,18 @@ class StatusBar {
       logger.error('StatusBar setBar', JSON.stringify(e))
     }
   }
+
   setDarkBar() {
-    this.setBar({ statusBarContentColor: '#000000' })
+    this.setBar({
+      statusBarContentColor: '#000000',
+      // statusBarContentColor: '#0094ff', // 导航栏字体颜色
+      // statusBarColor: "#0094dd" // 导航栏背景颜色
+    })
   }
 
   setLightBar() {
     this.setBar({ statusBarContentColor: '#ffffff' })
   }
 }
+
 export const statusBar = new StatusBar()
