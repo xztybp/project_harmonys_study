@@ -32,7 +32,7 @@
               "action.system.home"
             ]
           }
-        ]
+        ],
       }
     ],
     "extensionAbilities": [
@@ -48,6 +48,9 @@
           }
         ],
       }
+    ],
+    "requestPermissions": [
+      { "name": "ohos.permission.INTERNET" }
     ]
   }
 }

@@ -42,6 +42,7 @@ struct Index {
 
   build() {
     Column() {
+
       Tabs({ barPosition: BarPosition.End, index: $$this.activeIndex,}) {
         ForEach(this.listItem, (item: ListItem, index: number) => {
           TabContent() {
@@ -62,6 +63,7 @@ struct Index {
       }
       .barHeight(65)
       .scrollable(false)
+      .divider({ strokeWidth: 0.5, color: $r('app.color.common_gray_border') })
       // .animationMode(AnimationMode.NO_ANIMATION)
       // .onAnimationStart((index, targetIndex) => {
       //   // 动画开始时切换索引
